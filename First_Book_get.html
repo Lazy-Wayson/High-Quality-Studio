@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>获取《如何高质量教学？》电子版</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<script src="js/jquery-3.4.1.min.js" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="login">
+			<h2>获取本书电子版</h2>
+			<div class="login_box">
+				<input type="text" required / id="input"><label>邀请码</label>
+			</div>
+			<a href="#" id="botton">
+				获取！
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</a>
+		</div>
+	</body>
+
+	<script language="javascript">
+		$('#botton').click(function(){
+      	var val = $("#input").val();
+      	if (val == '1145141919810'){
+        	alert('邀请码正确，点击确定下载电子版');
+        	window.location.href = "https://download-high-quality-studio.rth.app/%E3%80%8A%E5%A6%82%E4%BD%95%E9%AB%98%E8%B4%A8%E9%87%8F%E6%95%99%E5%AD%A6%EF%BC%9F%E3%80%8B%E7%94%B5%E5%AD%90%E7%89%88.pdf";
+      	} else{
+        	alert('邀请码错误，请重新输入');
+      	}
+    })
+	</script>
+
+</html>
